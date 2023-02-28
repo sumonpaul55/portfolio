@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/logo1.png";
-import { RiBarChartHorizontalLine, RiCloseLine, RiFacebookLine, RiLinkedinLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { RiBarChartHorizontalLine, RiCloseLine, RiFacebookFill, RiLinkedinFill, RiTwitterFill, RiGithubFill } from "react-icons/ri";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
@@ -35,13 +35,21 @@ const Navbar = () => {
         {/* social icons */}
         <div className="absolute top-[35%] left-0">
           <ul>
-            <li>
-              <a href="facebook.com/sumpaul6">Facebook</a>
-              <RiFacebookLine />
+            <li className="w-[160px] h-10 flex justify-between items-center bg-blue-600 text-xl ml-[-105px] hover:ml-[0] duration-300">
+              <a href="/">Facebook</a>
+              <RiFacebookFill className="text-3xl" />
             </li>
-            <li>
+            <li className="w-[160px] h-10 flex justify-between items-center bg-blue-600 text-xl ml-[-105px] hover:ml-[0] duration-300">
               <a href="/">Linkedin</a>
-              <RiLinkedinLine />
+              <RiLinkedinFill className="text-3xl" />
+            </li>
+            <li className="w-[160px] h-10 flex justify-between items-center bg-blue-600 text-xl ml-[-105px] hover:ml-[0] duration-300">
+              <a href="/">Twitter</a>
+              <RiTwitterFill className="text-3xl" />
+            </li>
+            <li className="w-[160px] h-10 flex justify-between items-center bg-blue-600 text-xl ml-[-105px] hover:ml-[0] duration-300">
+              <a href="/">Github</a>
+              <RiGithubFill className="text-3xl" />
             </li>
           </ul>
         </div>
