@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import logo from "../assets/logo1.png";
-import { RiBarChartHorizontalLine, RiCloseLine } from "react-icons/ri";
+import { RiBarChartHorizontalLine, RiCloseLine, RiFacebookLine, RiLinkedinLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-
   return (
     <div>
       <div className="flex h-[80px] bg-[#0a192f] justify-between px-4 items-center text-white">
@@ -33,7 +33,18 @@ const Navbar = () => {
           <li className="py-4 text-3xl">Contact Me</li>
         </ul>
         {/* social icons */}
-        <div className="hidden"></div>
+        <div className="absolute top-[35%] left-0">
+          <ul>
+            <li>
+              <a href="facebook.com/sumpaul6">Facebook</a>
+              <RiFacebookLine />
+            </li>
+            <li>
+              <a href="/">Linkedin</a>
+              <RiLinkedinLine />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
