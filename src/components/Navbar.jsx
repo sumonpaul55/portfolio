@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo1.png";
-import { RiBarChartHorizontalLine, RiCloseLine, RiFacebookFill, RiLinkedinFill, RiTwitterFill, RiGithubFill } from "react-icons/ri";
+import { RiBarChartHorizontalLine, RiCloseLine, RiFacebookFill, RiLinkedinBoxFill, RiTwitterFill, RiGithubFill, RiMailAddFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -33,21 +33,25 @@ const Navbar = () => {
           <li className="py-4 text-3xl">Contact Me</li>
         </ul>
         {/* social icons */}
-        <div className="absolute top-[35%] left-0">
-          <ul>
+        <div className="absolute top-[35%] left-0 hidden xl:block">
+          <ul className="">
             <li className="w-[160px] h-10 flex justify-between items-center bg-blue-600 text-xl ml-[-105px] hover:ml-[0] duration-300">
               <a href="/">Facebook</a>
               <RiFacebookFill className="text-3xl" />
             </li>
-            <li className="w-[160px] h-10 flex justify-between items-center bg-blue-600 text-xl ml-[-105px] hover:ml-[0] duration-300">
+            <li className="w-[160px] h-10 flex justify-between items-center bg-[#3A1078] text-xl ml-[-105px] hover:ml-[0] duration-300">
               <a href="/">Linkedin</a>
-              <RiLinkedinFill className="text-3xl" />
+              <RiLinkedinBoxFill className="text-3xl" />
             </li>
-            <li className="w-[160px] h-10 flex justify-between items-center bg-blue-600 text-xl ml-[-105px] hover:ml-[0] duration-300">
+            <li className="w-[160px] h-10 flex justify-between items-center bg-[#C147E9] text-xl ml-[-105px] hover:ml-[0] duration-300">
               <a href="/">Twitter</a>
               <RiTwitterFill className="text-3xl" />
             </li>
-            <li className="w-[160px] h-10 flex justify-between items-center bg-blue-600 text-xl ml-[-105px] hover:ml-[0] duration-300">
+            <li className="w-[160px] h-10 flex justify-between items-center bg-[#D36B00] text-xl ml-[-105px] hover:ml-[0] duration-300">
+              <a href="/">Email</a>
+              <RiMailAddFill className="text-3xl" />
+            </li>
+            <li className="w-[160px] h-10 flex justify-between items-center bg-[#182747] text-xl ml-[-105px] hover:ml-[0] duration-300">
               <a href="/">Github</a>
               <RiGithubFill className="text-3xl" />
             </li>
