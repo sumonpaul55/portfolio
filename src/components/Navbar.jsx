@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import logo from "../assets/logo1.png";
 import { RiBarChartHorizontalLine, RiCloseLine, RiFacebookFill, RiLinkedinBoxFill, RiTwitterFill, RiGithubFill, RiMailAddFill } from "react-icons/ri";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const handleNavClick = () => setNav(!nav);
   return (
     <div>
       <div className="flex h-[80px] bg-[#0a192f] justify-between px-4 items-center text-white">
@@ -12,26 +14,65 @@ const Navbar = () => {
         </div>
         {/* menu */}
         <ul className="hidden md:flex">
-          <li>Home</li>
-          <li>About</li>
-          <li>Experience</li>
-          <li>Skills</li>
-          <li>Work</li>
-          <li>Contact Me</li>
+          <li>
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link to="work" smooth={true} duration={500}>
+              Work
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" smooth={true}>
+              Contact Me
+            </Link>
+          </li>
         </ul>
         {/* Hamburger */}
-        <div onClick={() => setNav(!nav)} className="md:hidden z-10 cursor-pointer text-2xl">
+        <div onClick={handleNavClick} className="md:hidden z-10 cursor-pointer text-2xl fixed top-5 right-5">
           {!nav ? <RiBarChartHorizontalLine /> : <RiCloseLine />}
         </div>
         {/* mobile menu */}
-        <ul className={`${!nav ? "hidden" : "absolute bg-[#0a192f] text-white flex items-center flex-col justify-center inset-0 md:hidden"}`}>
-          <li className="py-4 text-3xl">Home</li>
-          <li className="py-4 text-3xl">About</li>
-          <li className="py-4 text-3xl">Experience</li>
-          <li className="py-4 text-3xl">Skills</li>
-          <li className="py-4 text-3xl">Work</li>
-          <li className="py-4 text-3xl">Contact Me</li>
+        <ul className={`${!nav ? "hidden" : "fixed bg-[#0a192f] text-white flex items-center flex-col justify-center md:hidden inset-0"}`}>
+          <li className="py-4 text-3xl">
+            <Link onClick={handleNavClick} to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className="py-4 text-3xl">
+            <Link onClick={handleNavClick} to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li className="py-4 text-3xl">
+            <Link onClick={handleNavClick} to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li className="py-4 text-3xl">
+            <Link onClick={handleNavClick} to="work" smooth={true} duration={500}>
+              Work
+            </Link>
+          </li>
+          <li className="py-4 text-3xl">
+            <Link onClick={handleNavClick} to="contact" smooth={true} duration={500}>
+              Contact Me
+            </Link>
+          </li>
         </ul>
+        {/* mobile menu end */}
         {/* social icons */}
         <div className="absolute top-[35%] left-0 hidden xl:block">
           <ul className="">
