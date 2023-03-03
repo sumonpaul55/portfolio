@@ -1,4 +1,7 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
+import workingImg from "../../assets/projects/workImg.jpeg";
+import realEstate from "../../assets/projects/realestate.jpg";
 
 const Work = () => {
   return (
@@ -10,15 +13,134 @@ const Work = () => {
           <p className="my-6">// Checkout Some of my Recent work</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="shadow-lg shadow-[#040c16] group flex rounded-md justify-center items-center mx-auto contenct-div">
-            <div>
-              <span></span>
-              <div>
+          {/* grid items */}
+          <div
+            style={{ backgroundImage: `url(${workingImg})` }}
+            className="shadow-lg shadow-[#040c16] group flex rounded-md justify-center items-center mx-auto w-full contenct-div p-1"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="uppercase text-2xl text-white tracking-wider font-bold">React js application</span>
+              <div className="pt-8 text-center">
                 <a href="/">
-                  <button>butto</button>
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Demo</button>
                 </a>
                 <a href="/">
-                  <button>butto</button>
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ backgroundImage: `url(${realEstate})` }}
+            className="shadow-lg shadow-[#040c16] group flex rounded-md justify-center items-center mx-auto w-full contenct-div p-1"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="uppercase text-2xl text-white tracking-wider font-bold">React js application</span>
+              <div className="pt-8 text-center">
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Demo</button>
+                </a>
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* grid items */}
+          <div
+            style={{ backgroundImage: `url(${workingImg})` }}
+            className="shadow-lg shadow-[#040c16] group flex rounded-md justify-center items-center mx-auto w-full contenct-div p-1"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="uppercase text-2xl text-white tracking-wider font-bold">React js application</span>
+              <div className="pt-8 text-center">
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Demo</button>
+                </a>
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ backgroundImage: `url(${realEstate})` }}
+            className="shadow-lg shadow-[#040c16] group flex rounded-md justify-center items-center mx-auto w-full contenct-div p-1"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="uppercase text-2xl text-white tracking-wider font-bold">React js application</span>
+              <div className="pt-8 text-center">
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Demo</button>
+                </a>
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* grid items */}
+          <div
+            style={{ backgroundImage: `url(${realEstate})` }}
+            className="shadow-lg shadow-[#040c16] group flex rounded-md justify-center items-center mx-auto w-full contenct-div p-1"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="uppercase text-2xl text-white tracking-wider font-bold">React js application</span>
+              <div className="pt-8 text-center">
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Demo</button>
+                </a>
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ backgroundImage: `url(${workingImg})` }}
+            className="shadow-lg shadow-[#040c16] group flex rounded-md justify-center items-center mx-auto w-full contenct-div p-1"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="uppercase text-2xl text-white tracking-wider font-bold">React js application</span>
+              <div className="pt-8 text-center">
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Demo</button>
+                </a>
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* grid items */}
+          <div
+            style={{ backgroundImage: `url(${realEstate})` }}
+            className="shadow-lg shadow-[#040c16] group flex rounded-md justify-center items-center mx-auto w-full contenct-div p-1"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="uppercase text-2xl text-white tracking-wider font-bold">React js application</span>
+              <div className="pt-8 text-center">
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Demo</button>
+                </a>
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ backgroundImage: `url(${workingImg})` }}
+            className="shadow-lg shadow-[#040c16] group flex rounded-md justify-center items-center mx-auto w-full contenct-div p-1"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="uppercase text-2xl text-white tracking-wider font-bold">React js application</span>
+              <div className="pt-8 text-center">
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Demo</button>
+                </a>
+                <a href="/">
+                  <button className="py-3 px-6 m-2 text-gray-700 rounded-lg bg-white">Code</button>
                 </a>
               </div>
             </div>
