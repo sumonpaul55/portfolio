@@ -10,7 +10,7 @@ import Work from "./components/work/Work";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header sticky top-0 shadow">
         <Navbar />
       </header>
       <Home />

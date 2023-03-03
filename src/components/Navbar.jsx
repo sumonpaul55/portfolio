@@ -1,7 +1,9 @@
+/* eslint-disable no-undef */
 import React, { useState } from "react";
 import logo from "../assets/logo1.png";
 import { RiBarChartHorizontalLine, RiCloseLine, RiFacebookFill, RiLinkedinBoxFill, RiTwitterFill, RiGithubFill, RiMailAddFill } from "react-icons/ri";
 import { Link } from "react-scroll";
+import "./navbar.css";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -45,7 +47,7 @@ const Navbar = () => {
           {!nav ? <RiBarChartHorizontalLine /> : <RiCloseLine />}
         </div>
         {/* mobile menu */}
-        <ul className={`${!nav ? "hidden" : "fixed bg-[#0a192f] text-white flex items-center flex-col justify-center md:hidden inset-0"}`}>
+        <ul className={`bg-[#0a192fe7] ${!nav ? "hidden" : "fixed text-white flex items-center flex-col justify-center md:hidden inset-0"}`}>
           <li className="py-4 text-3xl">
             <Link onClick={handleNavClick} to="home" smooth={true} duration={500}>
               Home
@@ -74,7 +76,7 @@ const Navbar = () => {
         </ul>
         {/* mobile menu end */}
         {/* social icons */}
-        <div className="absolute top-[35%] left-0 hidden xl:block">
+        <div className="fixed top-[35%] left-0 hidden xl:block">
           <ul className="">
             <li className="w-[160px] h-10 flex justify-between items-center bg-blue-600 text-xl ml-[-105px] hover:ml-[0] duration-300">
               <a href="/">Facebook</a>
